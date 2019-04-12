@@ -1,0 +1,8 @@
+pandas
+librosa
+mido
+numpy
+matplotlib
+mir_eval
+sklearn
+scipy

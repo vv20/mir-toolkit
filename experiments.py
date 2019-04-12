@@ -667,8 +667,10 @@ class TestGenreClassification(unittest.TestCase):
         print(classification_report(y_test, y_predict))
 
     def testEnsemble(self):
-        one_dim = self.extractOneDimensionalFeatures()
-        multi_dim = self.extractMultiDimensionalFeatures()
+        self.extractOneDimensionalFeatures()
+        self.extractMultiDimensionalFeatures()
+        one_dim = pd.read_csv(self.one_dimensional_file)
+        multi_dim = pd.read_csv(self.multi_dimensional_file)
         one_dim_x = one_dim.values[:,:-1]
         multi_dim_x = multi_dim.values[:,:-1]
         one_dim_feat_no = one_dim_x.shape[1]
