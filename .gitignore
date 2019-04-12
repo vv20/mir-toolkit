@@ -6,3 +6,4 @@ dataset/*
 *.mid
 results/*
 *.csv
+venv/*
